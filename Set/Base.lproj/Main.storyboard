@@ -1,24 +1,515 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" systemVersion="17A277" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_9" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="Stack View standard spacing" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Set" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="esS-WI-cQ5">
+                                <rect key="frame" x="16" y="44" width="343" height="610"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="top" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="Ahf-q3-Zib">
+                                        <rect key="frame" x="0.0" y="0.0" width="343" height="95"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="characterWrap" translatesAutoresizingMaskIntoConstraints="NO" id="3sx-wL-MBX" customClass="BorderButton" customModule="Set" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="79.666666666666671" height="95"/>
+                                                <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                                <state key="normal">
+                                                    <string key="title">▲
+●
+◼︎</string>
+                                                    <color key="titleColor" red="0.2019295394" green="0.20153266189999999" blue="0.2823623717" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                        <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="characterWrap" translatesAutoresizingMaskIntoConstraints="NO" id="gzw-Wh-NOV" customClass="BorderButton" customModule="Set" customModuleProvider="target">
+                                                <rect key="frame" x="87.666666666666671" y="0.0" width="80.000000000000014" height="95"/>
+                                                <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                                <state key="normal">
+                                                    <string key="title">▲
+●
+◼︎</string>
+                                                    <color key="titleColor" red="0.2019295394" green="0.20153266189999999" blue="0.2823623717" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                        <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="characterWrap" translatesAutoresizingMaskIntoConstraints="NO" id="kD8-YX-mpu" customClass="BorderButton" customModule="Set" customModuleProvider="target">
+                                                <rect key="frame" x="175.66666666666666" y="0.0" width="79.666666666666657" height="95"/>
+                                                <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                                <state key="normal">
+                                                    <string key="title">▲
+●
+◼︎</string>
+                                                    <color key="titleColor" red="0.2019295394" green="0.20153266189999999" blue="0.2823623717" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                        <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="characterWrap" translatesAutoresizingMaskIntoConstraints="NO" id="EkM-0P-f3l" customClass="BorderButton" customModule="Set" customModuleProvider="target">
+                                                <rect key="frame" x="263.33333333333331" y="0.0" width="79.666666666666686" height="95"/>
+                                                <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                                <state key="normal">
+                                                    <string key="title">▲
+●
+◼︎</string>
+                                                    <color key="titleColor" red="0.2019295394" green="0.20153266189999999" blue="0.2823623717" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                        <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="top" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="7RG-R8-YNE">
+                                        <rect key="frame" x="0.0" y="103" width="343" height="95"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="characterWrap" translatesAutoresizingMaskIntoConstraints="NO" id="wwP-2f-Ys1" customClass="BorderButton" customModule="Set" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="79.666666666666671" height="95"/>
+                                                <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                                <state key="normal">
+                                                    <string key="title">▲
+●
+◼︎</string>
+                                                    <color key="titleColor" red="0.2019295394" green="0.20153266189999999" blue="0.2823623717" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                        <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="characterWrap" translatesAutoresizingMaskIntoConstraints="NO" id="HbO-A4-ht8" customClass="BorderButton" customModule="Set" customModuleProvider="target">
+                                                <rect key="frame" x="87.666666666666671" y="0.0" width="80.000000000000014" height="95"/>
+                                                <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                                <state key="normal">
+                                                    <string key="title">▲
+●
+◼︎</string>
+                                                    <color key="titleColor" red="0.2019295394" green="0.20153266189999999" blue="0.2823623717" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                        <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="characterWrap" translatesAutoresizingMaskIntoConstraints="NO" id="43G-hb-9ev" customClass="BorderButton" customModule="Set" customModuleProvider="target">
+                                                <rect key="frame" x="175.66666666666666" y="0.0" width="79.666666666666657" height="95"/>
+                                                <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                                <state key="normal">
+                                                    <string key="title">▲
+●
+◼︎</string>
+                                                    <color key="titleColor" red="0.2019295394" green="0.20153266189999999" blue="0.2823623717" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                        <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="characterWrap" translatesAutoresizingMaskIntoConstraints="NO" id="60Z-RG-yyS" customClass="BorderButton" customModule="Set" customModuleProvider="target">
+                                                <rect key="frame" x="263.33333333333331" y="0.0" width="79.666666666666686" height="95"/>
+                                                <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                                <state key="normal">
+                                                    <string key="title">▲
+●
+◼︎</string>
+                                                    <color key="titleColor" red="0.2019295394" green="0.20153266189999999" blue="0.2823623717" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                        <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="top" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="OVe-WZ-e8e">
+                                        <rect key="frame" x="0.0" y="206" width="343" height="95"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="characterWrap" translatesAutoresizingMaskIntoConstraints="NO" id="nSC-Vt-scx" customClass="BorderButton" customModule="Set" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="79.666666666666671" height="95"/>
+                                                <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                                <state key="normal">
+                                                    <string key="title">▲
+●
+◼︎</string>
+                                                    <color key="titleColor" red="0.2019295394" green="0.20153266189999999" blue="0.2823623717" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                        <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="characterWrap" translatesAutoresizingMaskIntoConstraints="NO" id="kO8-0Y-F8y" customClass="BorderButton" customModule="Set" customModuleProvider="target">
+                                                <rect key="frame" x="87.666666666666671" y="0.0" width="80.000000000000014" height="95"/>
+                                                <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                                <state key="normal">
+                                                    <string key="title">▲
+●
+◼︎</string>
+                                                    <color key="titleColor" red="0.2019295394" green="0.20153266189999999" blue="0.2823623717" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                        <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="characterWrap" translatesAutoresizingMaskIntoConstraints="NO" id="Pyq-z9-sxr" customClass="BorderButton" customModule="Set" customModuleProvider="target">
+                                                <rect key="frame" x="175.66666666666666" y="0.0" width="79.666666666666657" height="95"/>
+                                                <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                                <state key="normal">
+                                                    <string key="title">▲
+●
+◼︎</string>
+                                                    <color key="titleColor" red="0.2019295394" green="0.20153266189999999" blue="0.2823623717" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                        <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="characterWrap" translatesAutoresizingMaskIntoConstraints="NO" id="PhH-f7-wXv" customClass="BorderButton" customModule="Set" customModuleProvider="target">
+                                                <rect key="frame" x="263.33333333333331" y="0.0" width="79.666666666666686" height="95"/>
+                                                <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                                <state key="normal">
+                                                    <string key="title">▲
+●
+◼︎</string>
+                                                    <color key="titleColor" red="0.2019295394" green="0.20153266189999999" blue="0.2823623717" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                        <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="top" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="6Qs-Xq-9Gk">
+                                        <rect key="frame" x="0.0" y="309" width="343" height="95"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="characterWrap" translatesAutoresizingMaskIntoConstraints="NO" id="zFc-yd-kT5" customClass="BorderButton" customModule="Set" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="79.666666666666671" height="95"/>
+                                                <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                                <state key="normal">
+                                                    <string key="title">▲
+●
+◼︎</string>
+                                                    <color key="titleColor" red="0.2019295394" green="0.20153266189999999" blue="0.2823623717" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                        <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="characterWrap" translatesAutoresizingMaskIntoConstraints="NO" id="5Cw-uI-HKv" customClass="BorderButton" customModule="Set" customModuleProvider="target">
+                                                <rect key="frame" x="87.666666666666671" y="0.0" width="80.000000000000014" height="95"/>
+                                                <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                                <state key="normal">
+                                                    <string key="title">▲
+●
+◼︎</string>
+                                                    <color key="titleColor" red="0.2019295394" green="0.20153266189999999" blue="0.2823623717" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                        <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="characterWrap" translatesAutoresizingMaskIntoConstraints="NO" id="CpJ-7Q-M0p" customClass="BorderButton" customModule="Set" customModuleProvider="target">
+                                                <rect key="frame" x="175.66666666666666" y="0.0" width="79.666666666666657" height="95"/>
+                                                <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                                <state key="normal">
+                                                    <string key="title">▲
+●
+◼︎</string>
+                                                    <color key="titleColor" red="0.2019295394" green="0.20153266189999999" blue="0.2823623717" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                        <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="characterWrap" translatesAutoresizingMaskIntoConstraints="NO" id="ROK-rh-kl3" customClass="BorderButton" customModule="Set" customModuleProvider="target">
+                                                <rect key="frame" x="263.33333333333331" y="0.0" width="79.666666666666686" height="95"/>
+                                                <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                                <state key="normal">
+                                                    <string key="title">▲
+●
+◼︎</string>
+                                                    <color key="titleColor" red="0.2019295394" green="0.20153266189999999" blue="0.2823623717" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                        <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="top" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="Zi0-bA-dsb">
+                                        <rect key="frame" x="0.0" y="412" width="343" height="95"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="characterWrap" translatesAutoresizingMaskIntoConstraints="NO" id="N2b-9v-iWU" customClass="BorderButton" customModule="Set" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="79.666666666666671" height="95"/>
+                                                <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                                <state key="normal">
+                                                    <string key="title">▲
+●
+◼︎</string>
+                                                    <color key="titleColor" red="0.2019295394" green="0.20153266189999999" blue="0.2823623717" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                        <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="characterWrap" translatesAutoresizingMaskIntoConstraints="NO" id="ivv-iJ-MYV" customClass="BorderButton" customModule="Set" customModuleProvider="target">
+                                                <rect key="frame" x="87.666666666666671" y="0.0" width="80.000000000000014" height="95"/>
+                                                <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                                <state key="normal">
+                                                    <string key="title">▲
+●
+◼︎</string>
+                                                    <color key="titleColor" red="0.2019295394" green="0.20153266189999999" blue="0.2823623717" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                        <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="characterWrap" translatesAutoresizingMaskIntoConstraints="NO" id="deV-NZ-gOh" customClass="BorderButton" customModule="Set" customModuleProvider="target">
+                                                <rect key="frame" x="175.66666666666666" y="0.0" width="79.666666666666657" height="95"/>
+                                                <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                                <state key="normal">
+                                                    <string key="title">▲
+●
+◼︎</string>
+                                                    <color key="titleColor" red="0.2019295394" green="0.20153266189999999" blue="0.2823623717" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                        <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="characterWrap" translatesAutoresizingMaskIntoConstraints="NO" id="e3F-FS-c4i" customClass="BorderButton" customModule="Set" customModuleProvider="target">
+                                                <rect key="frame" x="263.33333333333331" y="0.0" width="79.666666666666686" height="95"/>
+                                                <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                                <state key="normal">
+                                                    <string key="title">▲
+●
+◼︎</string>
+                                                    <color key="titleColor" red="0.2019295394" green="0.20153266189999999" blue="0.2823623717" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                        <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="top" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="JHp-eu-fNW">
+                                        <rect key="frame" x="0.0" y="515" width="343" height="95"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="characterWrap" translatesAutoresizingMaskIntoConstraints="NO" id="5MM-Kx-Sj6" customClass="BorderButton" customModule="Set" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="79.666666666666671" height="95"/>
+                                                <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                                <state key="normal">
+                                                    <string key="title">▲
+●
+◼︎</string>
+                                                    <color key="titleColor" red="0.2019295394" green="0.20153266189999999" blue="0.2823623717" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                        <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="characterWrap" translatesAutoresizingMaskIntoConstraints="NO" id="kGF-36-4Pj" customClass="BorderButton" customModule="Set" customModuleProvider="target">
+                                                <rect key="frame" x="87.666666666666671" y="0.0" width="80.000000000000014" height="95"/>
+                                                <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                                <state key="normal">
+                                                    <string key="title">▲
+●
+◼︎</string>
+                                                    <color key="titleColor" red="0.2019295394" green="0.20153266189999999" blue="0.2823623717" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                        <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="characterWrap" translatesAutoresizingMaskIntoConstraints="NO" id="WKd-WB-iC4" customClass="BorderButton" customModule="Set" customModuleProvider="target">
+                                                <rect key="frame" x="175.66666666666666" y="0.0" width="79.666666666666657" height="95"/>
+                                                <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                                <state key="normal">
+                                                    <string key="title">▲
+●
+◼︎</string>
+                                                    <color key="titleColor" red="0.2019295394" green="0.20153266189999999" blue="0.2823623717" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                        <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="characterWrap" translatesAutoresizingMaskIntoConstraints="NO" id="OVz-bp-Ptx" customClass="BorderButton" customModule="Set" customModuleProvider="target">
+                                                <rect key="frame" x="263.33333333333331" y="0.0" width="79.666666666666686" height="95"/>
+                                                <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                                <state key="normal">
+                                                    <string key="title">▲
+●
+◼︎</string>
+                                                    <color key="titleColor" red="0.2019295394" green="0.20153266189999999" blue="0.2823623717" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                        <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="9wU-UH-Qkf">
+                                <rect key="frame" x="16" y="669" width="343" height="42"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="42Y-ym-qh1" customClass="BorderButton" customModule="Set" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="167.66666666666666" height="42"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                        <state key="normal" title="New game">
+                                            <color key="titleColor" red="0.2019295394" green="0.20153266189999999" blue="0.2823623717" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rus-7i-xsx" customClass="BorderButton" customModule="Set" customModuleProvider="target">
+                                        <rect key="frame" x="175.66666666666663" y="0.0" width="167.33333333333337" height="42"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                        <state key="normal" title="Deal 3+">
+                                            <color key="titleColor" red="0.2019295394" green="0.20153266189999999" blue="0.2823623717" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        </state>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Score: 0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="knr-ke-Jut">
+                                <rect key="frame" x="116" y="730" width="143" height="48"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="40"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.63950780940153795" green="0.80597636421319796" blue="0.68227126582618058" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="9wU-UH-Qkf" secondAttribute="trailing" constant="16" id="RIS-88-han"/>
+                            <constraint firstItem="9wU-UH-Qkf" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="ZPw-h8-ybO"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="9wU-UH-Qkf" secondAttribute="trailing" constant="16" id="amZ-oo-As7"/>
+                            <constraint firstItem="9wU-UH-Qkf" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="625" id="eBO-q6-36L"/>
+                            <constraint firstItem="esS-WI-cQ5" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="udk-6d-Fvv"/>
+                            <constraint firstItem="esS-WI-cQ5" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="ytV-4S-GAs"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="esS-WI-cQ5" secondAttribute="trailing" constant="16" id="zST-yf-Qz1"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outletCollection property="Cards" destination="3sx-wL-MBX" collectionClass="NSMutableArray" id="2rK-Ti-g9R"/>
+                        <outletCollection property="Cards" destination="gzw-Wh-NOV" collectionClass="NSMutableArray" id="PS3-WL-VG7"/>
+                        <outletCollection property="Cards" destination="kD8-YX-mpu" collectionClass="NSMutableArray" id="Afh-nf-cVf"/>
+                        <outletCollection property="Cards" destination="EkM-0P-f3l" collectionClass="NSMutableArray" id="RIx-Vg-kbO"/>
+                        <outletCollection property="Cards" destination="wwP-2f-Ys1" collectionClass="NSMutableArray" id="gNT-cZ-r9M"/>
+                        <outletCollection property="Cards" destination="HbO-A4-ht8" collectionClass="NSMutableArray" id="xEB-g2-Do8"/>
+                        <outletCollection property="Cards" destination="43G-hb-9ev" collectionClass="NSMutableArray" id="7Jt-am-fOX"/>
+                        <outletCollection property="Cards" destination="60Z-RG-yyS" collectionClass="NSMutableArray" id="vbu-gF-7JC"/>
+                        <outletCollection property="Cards" destination="nSC-Vt-scx" collectionClass="NSMutableArray" id="t9t-qs-Dj1"/>
+                        <outletCollection property="Cards" destination="kO8-0Y-F8y" collectionClass="NSMutableArray" id="yw8-Jk-RC3"/>
+                        <outletCollection property="Cards" destination="Pyq-z9-sxr" collectionClass="NSMutableArray" id="o8q-2p-iSU"/>
+                        <outletCollection property="Cards" destination="PhH-f7-wXv" collectionClass="NSMutableArray" id="YIh-dK-oOF"/>
+                        <outletCollection property="Cards" destination="zFc-yd-kT5" collectionClass="NSMutableArray" id="BFg-in-cMB"/>
+                        <outletCollection property="Cards" destination="5Cw-uI-HKv" collectionClass="NSMutableArray" id="zan-w9-p3p"/>
+                        <outletCollection property="Cards" destination="CpJ-7Q-M0p" collectionClass="NSMutableArray" id="Ueb-cC-5F4"/>
+                        <outletCollection property="Cards" destination="ROK-rh-kl3" collectionClass="NSMutableArray" id="inz-Qx-Kbb"/>
+                        <outletCollection property="Cards" destination="N2b-9v-iWU" collectionClass="NSMutableArray" id="vNW-HR-vFm"/>
+                        <outletCollection property="Cards" destination="ivv-iJ-MYV" collectionClass="NSMutableArray" id="hoz-uO-Xoe"/>
+                        <outletCollection property="Cards" destination="deV-NZ-gOh" collectionClass="NSMutableArray" id="Hu2-rg-y14"/>
+                        <outletCollection property="Cards" destination="e3F-FS-c4i" collectionClass="NSMutableArray" id="xIn-46-mkR"/>
+                        <outletCollection property="Cards" destination="5MM-Kx-Sj6" collectionClass="NSMutableArray" id="cqk-bo-BaX"/>
+                        <outletCollection property="Cards" destination="kGF-36-4Pj" collectionClass="NSMutableArray" id="d3n-cH-bwk"/>
+                        <outletCollection property="Cards" destination="WKd-WB-iC4" collectionClass="NSMutableArray" id="pAC-Mg-fQh"/>
+                        <outletCollection property="Cards" destination="OVz-bp-Ptx" collectionClass="NSMutableArray" id="hYG-zF-vpU"/>
+                        <outletCollection property="Cards" destination="OVz-bp-Ptx" collectionClass="NSMutableArray" id="s8s-go-PDh"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="52" y="79.802955665024641"/>
         </scene>
     </scenes>
 </document>
